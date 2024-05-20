@@ -7,7 +7,7 @@ public class CommandDispatcher {
 
     private static ObjectFactory get() {
         String currentDirectory = System.getProperty("user.dir");
-        ObjectFactory obj = new ObjectFactory(currentDirectory + "/src/com/godel/UI/plugins.xml");
+        ObjectFactory obj = new ObjectFactory(currentDirectory + "/STEP1/TaxCalculator/src/com/godel/UI/plugins.xml");
         return obj;
     }
     public static boolean dispatch(ComputationContext context, String archetype) {

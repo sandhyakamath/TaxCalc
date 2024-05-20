@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<plugins type="script">
+    <plugin archetype ="OrdinaryCitizen" command="com/godel/engine/scripts/command/OrdinaryCitizen.py"/>
+    <plugin archetype="SeniorCitizen" command="com/godel/engine/scripts/command/SeniorCitizen.py" />
+    <plugin archetype="SeniorCitizenFemale" command="com/godel/engine/scripts/command/SeniorCitizenFemale.py"/>
+</plugins>
