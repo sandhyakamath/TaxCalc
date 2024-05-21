@@ -38,8 +38,8 @@ public class ScriptingInterpreter {
             e.printStackTrace();
             return false;
         }
-        double m = ps.get("result").asDouble();
-        vars.put("result",ps.get("result").asDouble());
+        String m = ps.get("result").asString();
+        vars.put("result",m);
         return true;
     }
 

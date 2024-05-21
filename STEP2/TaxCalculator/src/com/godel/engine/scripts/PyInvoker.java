@@ -24,9 +24,9 @@ public class PyInvoker {
                 return false;
             }*/
            // System.out.println(code);
-            double liability = (double) map.get("result");
-            taxDTO.setLiability(liability);
-            return true;
+            String result = (String) map.get("result");
+            taxDTO.getLiability();
+            return result == "true" ? true : false;
         }
         catch(Exception e ) {
             System.out.println("Exception caught.....");
