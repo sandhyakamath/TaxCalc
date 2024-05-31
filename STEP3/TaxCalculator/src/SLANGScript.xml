@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<plugins type="SLANGScript">
+    <plugin archetype ="OrdinaryCitizen" command="com/godel/engine/SLANGScripts/command/OrdinaryCitizen.sl"/>
+    <plugin archetype="SeniorCitizen" command="com/godel/engine/SLANGScripts/command/SeniorCitizen.sl" />
+    <plugin archetype="SeniorCitizenFemale" command="com/godel/engine/SLANGScripts/command/SeniorCitizenFemale.sl"/>
+</plugins>
