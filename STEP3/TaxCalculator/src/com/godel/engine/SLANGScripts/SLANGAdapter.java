@@ -49,7 +49,6 @@ public class SLANGAdapter  {
             //
             RUNTIME_CONTEXT f = new RUNTIME_CONTEXT(p, context.getTable());
             SymbolTable fp = p.Execute(visitor, f);
-            System.out.println(fp.get("RESULT").dblValue);
             taxDTO.setLiability(fp.get("RESULT").dblValue);
         } catch (IOException e) {
             throw new RuntimeException(e);

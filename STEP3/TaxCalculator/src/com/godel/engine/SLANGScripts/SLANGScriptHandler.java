@@ -8,7 +8,6 @@ import com.godel.dto.TaxDTO;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.Arrays;
 
 public class SLANGScriptHandler {
 
@@ -22,8 +21,6 @@ public class SLANGScriptHandler {
                     String fieldName = methodName.substring(3);
                    // if (Arrays.asList(fields).contains(fieldName.toLowerCase())) {
                         String symbolName = fieldName.toUpperCase();
-                    System.out.println(m.getReturnType().getName());
-                    System.out.println(m.getReturnType().getTypeName());
                         if (m.getReturnType().getTypeName().equals("boolean")) {
                             collectBoolSymbols(symbolName, (Boolean) m.invoke(taxDTO), context);
                         } else if (m.getReturnType().getTypeName().equals("java.lang.String")) {
