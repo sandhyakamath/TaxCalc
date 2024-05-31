@@ -6,5 +6,5 @@
   <li>Engine: This is where the tax computation takes place.</li>
 </ul>
 <p>
-  The system is designed to be extensible through a plugin system. The command dispatcher, with the assistance of the plugin manager, extracts the tax computation logic, including the plugin type, archetype, and command, from an XML file. The computation engine then executes different logic based on the received command. It uses Java classes, Python scripts, SLANG scripts, or C++ classes via JNI to calculate the tax. The computed result is subsequently transferred to the UI layer for display.
+  The system is designed to be extensible through a plugin system. The command dispatcher, with the assistance of the plugin manager, extracts the tax computation information, including the plugin type, archetype, and command, from an XML file. The computation engine then executes different logic based on the received command. It uses Java classes, Python scripts, SLANG scripts, or C++ classes via JNI to calculate the tax. The computed result is subsequently transferred to the UI layer for display.
 </p>
