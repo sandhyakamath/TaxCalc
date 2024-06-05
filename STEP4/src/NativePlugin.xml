@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<plugins type="NativePlugin">
+    <plugin archetype ="OrdinaryCitizen" command="com.godel.engine.JNI.command.OrdinaryCitizenCommand" mode="singleton"/>
+    <plugin archetype="SeniorCitizen" command="com.godel.engine.JNI.command.SeniorCitizenCommand" mode="singleton"/>
+    <plugin archetype="SeniorCitizenFemale" command="com.godel.engine.JNI.command.SeniorCitizenFemaleCommand" mode="singleton"/>
+</plugins>

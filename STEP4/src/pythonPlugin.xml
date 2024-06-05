@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<plugins type="PythonPlugin">
+    <plugin archetype ="OrdinaryCitizen" command="com.godel.engine.pythonScripts.command.OrdinaryCitizenCommand" mode="singleton"/>
+    <plugin archetype="SeniorCitizen" command="com.godel.engine.pythonScripts.command.SeniorCitizenCommand" mode="singleton"/>
+    <plugin archetype="SeniorCitizenFemale" command="com.godel.engine.pythonScripts.command.SeniorCitizenFemaleCommand" mode="singleton"/>
+</plugins>

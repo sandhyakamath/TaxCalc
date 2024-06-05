@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<plugins type="class">
+<plugins type="JavaClass">
     <plugin archetype ="OrdinaryCitizen" command="com.godel.engine.classes.command.OrdinaryCitizenCommand" mode="singleton"/>
     <plugin archetype="SeniorCitizen" command="com.godel.engine.classes.command.SeniorCitizenCommand" mode="singleton"/>
     <plugin archetype="SeniorCitizenFemale" command="com.godel.engine.classes.command.SeniorCitizenFemaleCommand" mode="singleton"/>
