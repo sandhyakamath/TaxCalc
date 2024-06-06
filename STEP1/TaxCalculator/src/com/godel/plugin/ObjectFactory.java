@@ -27,7 +27,7 @@ public class ObjectFactory {
         IComputationCommand cmd = commands.get(archetype);
         if (cmd != null) {
             try {
-                return mode == "singleton" ? cmd : deepClone(cmd);
+                return mode.equalsIgnoreCase("singleton") ? cmd : deepClone(cmd);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             } catch (ClassNotFoundException e) {
@@ -36,8 +36,8 @@ public class ObjectFactory {
         }
 
         try {
-            Class<?> clazz = Class.forName(className);
-            if (clazz == null) return null;
+                Class<?> clazz = Class.forName(className);
+                if (clazz == null) return null;
                 Constructor<?> ctor = clazz.getConstructor();
                 cmd = (IComputationCommand) ctor.newInstance();
                 commands.put(archetype, cmd);
