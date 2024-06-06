@@ -26,19 +26,11 @@ public class CommandDispatcher {
             if (cmd.preExecute(context))
                 if (cmd.execute(context))
                     return cmd.postExecute(context);
-            /*String location = manager.getScript(archetype);
-            String currentDirectory = System.getProperty("user.dir");
-            String fileName = currentDirectory + "/STEP4/TaxCalculator/src/"+ location;
-            return PyInvoker.Invoke(fileName, context);*/
         } else if (type.equalsIgnoreCase("SLANGPlugin")) {
             SLANGComputationCommand cmd = manager.getSLANGScriptInstance(archetype);
             if (cmd.preExecute(context))
                 if (cmd.execute(context))
                     return cmd.postExecute(context);
-            /*String location = manager.getScript(archetype);
-            String currentDirectory = System.getProperty("user.dir");
-            String fileName = currentDirectory + "/STEP4/TaxCalculator/src/" + location;
-            return SLANGAdapter.executeScript(fileName, context);*/
         } else if (type.equalsIgnoreCase("NativePlugin")) {
             JNIComputationCommand cmd = manager.getJNIInstance(archetype);
             if (cmd.preExecute(context))
